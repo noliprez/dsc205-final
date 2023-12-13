@@ -11,7 +11,7 @@ from streamlit_folium import folium_static
 # Prevents loading the file every time the user interacts with widgets
 @st.cache_data
 def load_data():
-    filename = "https://raw.githubusercontent.com/noliprez/dsc205/main/Significant_Earthquakes.csv"
+    filename = "https://raw.githubusercontent.com/noliprez/dsc205-final/main/Significant_Earthquakes.csv"
     df = pd.read_csv(filename,
                      parse_dates=True)
     return df
